@@ -7,6 +7,9 @@ public class CarSfxHandler : MonoBehaviour
     public AudioSource tiresScreechingAudioSource;
     public AudioSource engineAudioSource;
     public AudioSource carHitAudioSource;
+    public AudioSource carJumpAudioSource;
+    public AudioSource carJumpLandingAudioSource;
+
 
 
     //Local Variables
@@ -82,8 +85,16 @@ public class CarSfxHandler : MonoBehaviour
         //Fade out the tire screech SFX if we are not screeching.
         else tiresScreechingAudioSource.volume = Mathf.Lerp(tiresScreechingAudioSource.volume, 0, Time.deltaTime * 10);
 
+    }
 
+    public void PlayJumpSfx()
+    {
+        carJumpAudioSource.Play();
+    }
 
+    public void PlayLandingSfx()
+    {
+        carJumpLandingAudioSource.Play();
     }
 
     void OnCollisionEnter2D(Collision2D collision2D)

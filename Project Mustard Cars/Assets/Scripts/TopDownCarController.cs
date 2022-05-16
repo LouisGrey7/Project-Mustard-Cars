@@ -19,6 +19,7 @@ public class TopDownCarController : MonoBehaviour
 
     [Header("Jumping")]
     public AnimationCurve jumpCurve;
+    public ParticleSystem landingParticleSystem;
 
 
     //Local variables
@@ -34,12 +35,14 @@ public class TopDownCarController : MonoBehaviour
     //Components
     Rigidbody2D carRigidBody2D;
     Collider2D carCollider;
+    CarSfxHandler carSfxHandler;
 
     //Awake is called when the script instance is being loaded
     void Awake()
     {
         carRigidBody2D = GetComponent<Rigidbody2D>();
         carCollider = GetComponentInChildren<Collider2D>();
+        carSfxHandler = GetComponent<CarSfxHandler>();
     }
 
 
@@ -68,6 +71,10 @@ public class TopDownCarController : MonoBehaviour
     void ApplyEngineForce()
     {
 
+        //Don't let the player brake while in the air, but we still allow some drag so it can be slowed slightly. 
+        if (isJumping && accelerationInput < 0)
+            accelerationInput = 0;
+
         //calculate how much "forward we are going in terms of the diorection of our velocity
         velocityVsUp = Vector2.Dot(transform.up, carRigidBody2D.velocity);
 
@@ -84,7 +91,7 @@ public class TopDownCarController : MonoBehaviour
         }
 
         //Limit so we cannot go faster in  any direction while accelerating
-        if (carRigidBody2D.velocity.sqrMagnitude > maxSpeed * maxSpeed && accelerationInput > 0)
+        if (carRigidBody2D.velocity.sqrMagnitude > maxSpeed * maxSpeed && accelerationInput > 0 && !isJumping)
         {
             return;
         }
@@ -148,6 +155,12 @@ public class TopDownCarController : MonoBehaviour
         lateralVelocity = GetLateralVelocity();
         isBraking = false;
 
+
+        if (isJumping)
+        {
+            return false;
+        }
+
         //Check if we are moving forward and if the player is hitting the brakes. In that case the tires should screech.
         if (accelerationInput < 0 && velocityVsUp > 0)
         {
@@ -197,6 +210,16 @@ public class TopDownCarController : MonoBehaviour
         //Disable the car collider so we can perform an overlapped check 
         carCollider.enabled = false;
 
+        carSfxHandler.PlayJumpSfx();
+
+        //Change sorting layer to flying
+        carSpriteRenderer.sortingLayerName = "Flying";
+        carShadowRenderer.sortingLayerName = "Flying";
+
+
+        //Push the object forward as we passed a jump
+        carRigidBody2D.AddForce(carRigidBody2D.velocity.normalized * jumpPushScale * 10, ForceMode2D.Impulse);
+
         while (isJumping)
         {
             //Percentage 0 - 1.0 of where we are in the jumping process
@@ -221,21 +244,44 @@ public class TopDownCarController : MonoBehaviour
             yield return null;
         }
 
+        //Check if landing is ok or not
+        if (Physics2D.OverlapCircle(transform.position, 1.5f))
+        {
+            //Something is below the car so we need to jump again
+            isJumping = false;
 
+            //add a small jump and push the car forward a bit
+            Jump(0.2f, 0.6f);
+        }
+        else
+        {
+            //Handle landing, scale back the object
+            carSpriteRenderer.transform.localScale = Vector3.one;
 
+            //reset the shadows position and scale
+            carShadowRenderer.transform.localPosition = Vector3.zero;
+            carShadowRenderer.transform.localScale = carSpriteRenderer.transform.localScale;
 
-        //Handle landing, scale back the object
-        carSpriteRenderer.transform.localScale = Vector3.one;
+            //We are safe to land, so enable collision
+            carCollider.enabled = true;
 
-        //reset the shadows position and scale
-        carShadowRenderer.transform.localPosition = Vector3.zero;
-        carShadowRenderer.transform.localScale = carSpriteRenderer.transform.localScale;
+            //Change sorting layer to regular layer
+            carSpriteRenderer.sortingLayerName = "Car";
+            carShadowRenderer.sortingLayerName = "Shadow";
 
-        //Enable the car collider again so we can detect things with the trigger. 
-        carCollider.enabled = true;
+            //Play the landing particle system if it is a bigger jump
+            if (jumpHeightScale > 0.2f)
+            {
+                landingParticleSystem.Play();
 
-        //Change state
-        isJumping = false;
+                carSfxHandler.PlayLandingSfx();
+            }
+
+            //Change state
+            isJumping = false;
+        }
+
+        
     }
 
     //Detect Jump trigger
