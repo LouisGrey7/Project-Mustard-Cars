@@ -12986,6 +12986,14 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6297736545003867245, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736545003867245, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736545003867245, guid: fed87167b75f5064e89555d80b444716, type: 3}
       propertyPath: m_LocalPosition.x
       value: 46.440002
       objectReference: {fileID: 0}
@@ -13025,5 +13033,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6297736545003867246, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1290893814}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fed87167b75f5064e89555d80b444716, type: 3}
