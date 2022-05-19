@@ -9,6 +9,7 @@ public class CarSfxHandler : MonoBehaviour
     public AudioSource carHitAudioSource;
     public AudioSource carJumpAudioSource;
     public AudioSource carJumpLandingAudioSource;
+    public AudioSource bulletHitAudioSource;
 
 
 
@@ -112,5 +113,10 @@ public class CarSfxHandler : MonoBehaviour
             carHitAudioSource.Play();
         }
         
+    }
+
+    public void PlayBulletHitSfx()
+    {
+        bulletHitAudioSource.Play();
     }
 }

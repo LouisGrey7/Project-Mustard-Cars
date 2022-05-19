@@ -46,6 +46,7 @@ public class Damagable : MonoBehaviour
         }
         else
         {
+
             OnHit?.Invoke();
         }
     }

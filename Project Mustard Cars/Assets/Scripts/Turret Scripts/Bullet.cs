@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,7 @@ public class Bullet : MonoBehaviour
     private float conqueredDistance = 0;
     private Rigidbody2D rb2d;
 
+    CarSfxHandler carSfxHandler;
 
     private void Awake()
     {
@@ -37,19 +39,24 @@ public class Bullet : MonoBehaviour
     {
         rb2d.velocity = Vector2.zero;
         gameObject.SetActive(false);
+        Destroy(gameObject);
+
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Collider " + collision.name);
+        //Debug.Log("Collider " + collision.name);
 
         var damagable = collision.GetComponent<Damagable>();
         if(damagable != null)
         {
             damagable.Hit(damage);
+            
         }
 
         DisableObject();
+        
     }
 
 }
