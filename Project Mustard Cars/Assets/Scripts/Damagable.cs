@@ -43,6 +43,7 @@ public class Damagable : MonoBehaviour
         if (health <= 0)
         {
             OnDead?.Invoke();
+            Destroy(gameObject);
         }
         else
         {

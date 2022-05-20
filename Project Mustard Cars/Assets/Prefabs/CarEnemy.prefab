@@ -72,6 +72,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3a5dae2fb1542543af6be2f901a7080, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
+  OnShoot:
+    m_PersistentCalls:
+      m_Calls: []
+  OnMoveTurret:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &4132982325898939117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,6 +157,7 @@ MonoBehaviour:
   carHitAudioSource: {fileID: 2314484177413644130}
   carJumpAudioSource: {fileID: 4528634732586098508}
   carJumpLandingAudioSource: {fileID: 1049271454624159732}
+  bulletHitAudioSource: {fileID: 0}
 --- !u!1 &2296297917501214260
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,7 +262,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2721419357274361787}
   serializedVersion: 8
-  lengthInSec: 5
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -5652,7 +5660,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6074188412791952438}
   serializedVersion: 8
-  lengthInSec: 5
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0

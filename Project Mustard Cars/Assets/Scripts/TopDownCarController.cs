@@ -10,7 +10,7 @@ public class TopDownCarController : MonoBehaviour
     public float accelerationFactor = 30.0f;
     public float turnFactor = 3.5f;
     public float maxSpeed = 20;
-
+    public Vector2 forwardVelocity;
 
     [Header("Sprites")]
     public SpriteRenderer carSpriteRenderer;
@@ -33,7 +33,7 @@ public class TopDownCarController : MonoBehaviour
     bool isJumping = false;
 
     //Components
-    Rigidbody2D carRigidBody2D;
+    public Rigidbody2D carRigidBody2D;
     Collider2D carCollider;
     CarSfxHandler carSfxHandler;
 

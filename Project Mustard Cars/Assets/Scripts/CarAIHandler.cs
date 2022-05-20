@@ -56,26 +56,27 @@ public class CarAIHandler : MonoBehaviour
 
         if (targetTransform != null)
         {
-            targetPosition = targetTransform.position;
+            targetPosition = targetTransform.position + (Vector3)topDownCarController.carRigidBody2D.velocity;
         }
 
     }
-        float TurnTowardTarget()
-        {
-            Vector2 vectorToTarget = targetPosition - transform.position;
-            vectorToTarget.Normalize();
 
-            //Calculate an angle towards the target
-            float angleToTarget = Vector2.SignedAngle(transform.up, vectorToTarget);
-            angleToTarget *= -1;
+    float TurnTowardTarget()
+    {
+        Vector2 vectorToTarget = targetPosition - transform.position;
+        vectorToTarget.Normalize();
 
-            //We want the car to turn as much as possible if the angle is greater than 45 degress and if the angle is smaller it will make smootherr smaller turn
-            float steerAmount = angleToTarget / 45.0f;
+        //Calculate an angle towards the target
+        float angleToTarget = Vector2.SignedAngle(transform.up, vectorToTarget);
+        angleToTarget *= -1;
 
-            //Clamp steering to between -1 and 1
-            steerAmount = Mathf.Clamp(steerAmount, -1.0f, 1.0f);
+        //We want the car to turn as much as possible if the angle is greater than 45 degress and if the angle is smaller it will make smootherr smaller turn
+        float steerAmount = angleToTarget / 45.0f;
 
-            return steerAmount;
+        //Clamp steering to between -1 and 1
+        steerAmount = Mathf.Clamp(steerAmount, -1.0f, 1.0f);
 
-        }
+        return steerAmount;
+
+    }
 }
