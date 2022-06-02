@@ -53319,7 +53319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6297736545003867247, guid: fed87167b75f5064e89555d80b444716, type: 3}
       propertyPath: maxSpeed
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6297736545401283451, guid: fed87167b75f5064e89555d80b444716, type: 3}
       propertyPath: m_audioClip

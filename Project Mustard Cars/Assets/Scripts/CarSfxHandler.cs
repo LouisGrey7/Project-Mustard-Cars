@@ -63,6 +63,12 @@ public class CarSfxHandler : MonoBehaviour
         desiredEnginePitch = Mathf.Clamp(desiredEnginePitch, 0.5f, 2f);
         engineAudioSource.pitch = Mathf.Lerp(engineAudioSource.pitch, desiredEnginePitch, Time.deltaTime * 1.5f);
 
+        if (PauseMenu.GameIsPaused)
+        {
+            engineAudioSource.volume = 0f;
+            
+        }
+
     }
 
     void UpdateTiresScreechingSFX()
@@ -86,6 +92,12 @@ public class CarSfxHandler : MonoBehaviour
         //Fade out the tire screech SFX if we are not screeching.
         else tiresScreechingAudioSource.volume = Mathf.Lerp(tiresScreechingAudioSource.volume, 0, Time.deltaTime * 10);
 
+        if (PauseMenu.GameIsPaused)
+        {
+            
+            tiresScreechingAudioSource.volume = 0f;
+
+        }
     }
 
     public void PlayJumpSfx()
