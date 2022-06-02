@@ -53117,17 +53117,41 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.04
       objectReference: {fileID: 0}
+    - target: {fileID: 6297736544388563046, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6297736544388563047, guid: fed87167b75f5064e89555d80b444716, type: 3}
       propertyPath: m_Time
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736544388563047, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: m_SortingLayer
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 6297736544388563047, guid: fed87167b75f5064e89555d80b444716, type: 3}
       propertyPath: m_MotionVectors
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6297736544388563047, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -286693953
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736544388563047, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: m_Parameters.alignment
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736544388563047, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: m_Parameters.textureMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736544388563047, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: m_Parameters.colorGradient.atime1
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736544388563047, guid: fed87167b75f5064e89555d80b444716, type: 3}
       propertyPath: m_Parameters.colorGradient.key0.a
-      value: 0.5372549
+      value: 0.7254902
       objectReference: {fileID: 0}
     - target: {fileID: 6297736544388563047, guid: fed87167b75f5064e89555d80b444716, type: 3}
       propertyPath: m_Parameters.colorGradient.key0.b
@@ -53141,17 +53165,41 @@ PrefabInstance:
       propertyPath: m_Parameters.colorGradient.key0.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6297736544388563047, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.a
+      value: 0.17254902
+      objectReference: {fileID: 0}
     - target: {fileID: 6297736544873511636, guid: fed87167b75f5064e89555d80b444716, type: 3}
       propertyPath: m_Time
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736544873511636, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: m_SortingLayer
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 6297736544873511636, guid: fed87167b75f5064e89555d80b444716, type: 3}
       propertyPath: m_MotionVectors
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6297736544873511636, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -286693953
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736544873511636, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: m_Parameters.alignment
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736544873511636, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: m_Parameters.textureMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736544873511636, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: m_Parameters.colorGradient.atime1
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736544873511636, guid: fed87167b75f5064e89555d80b444716, type: 3}
       propertyPath: m_Parameters.colorGradient.key0.a
-      value: 0.5372549
+      value: 0.7254902
       objectReference: {fileID: 0}
     - target: {fileID: 6297736544873511636, guid: fed87167b75f5064e89555d80b444716, type: 3}
       propertyPath: m_Parameters.colorGradient.key0.b
@@ -53164,14 +53212,22 @@ PrefabInstance:
     - target: {fileID: 6297736544873511636, guid: fed87167b75f5064e89555d80b444716, type: 3}
       propertyPath: m_Parameters.colorGradient.key0.r
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736544873511636, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.a
+      value: 0.17254902
       objectReference: {fileID: 0}
     - target: {fileID: 6297736544873511643, guid: fed87167b75f5064e89555d80b444716, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.17
+      value: -8.07
       objectReference: {fileID: 0}
     - target: {fileID: 6297736544873511643, guid: fed87167b75f5064e89555d80b444716, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.08
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736544873511643, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6297736544907291106, guid: fed87167b75f5064e89555d80b444716, type: 3}
       propertyPath: m_Sprite
