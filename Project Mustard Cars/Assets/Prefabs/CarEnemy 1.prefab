@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8695520495080277494}
   - component: {fileID: 5775565372053017967}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CarScreechSFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 4995660960942037502}
   - component: {fileID: 5249715138717270993}
   - component: {fileID: 4869743345208751918}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ParticleSystemSmokeLeftWheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4972,7 +4972,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8079877893156215402}
   - component: {fileID: 9126204219767917604}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CarHitSFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5101,7 +5101,7 @@ GameObject:
   - component: {fileID: 3191338718408734958}
   - component: {fileID: 7408359492105433720}
   - component: {fileID: 871308492578572191}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WheelTrailerRendererLeftWheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5245,7 +5245,7 @@ GameObject:
   - component: {fileID: 1427558229921820914}
   - component: {fileID: 3776967833438390542}
   - component: {fileID: 5660694480659528174}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WheelTrailerRendererRightWheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5388,7 +5388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4036665281786311735}
   - component: {fileID: 5780295004868314290}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CarJumpLanding
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5516,7 +5516,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7423378116270158003}
   - component: {fileID: 5030607597599773392}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5601,7 +5601,7 @@ GameObject:
   - component: {fileID: 8418810995578218624}
   - component: {fileID: 7278591210440198047}
   - component: {fileID: 3154196415651029683}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ParticleSystemLandingSmoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10412,7 +10412,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2374645870352838844}
   - component: {fileID: 1987951997838276522}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CarSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10495,7 +10495,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6505831002976283926}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10531,7 +10531,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8730736358854841121}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10565,7 +10565,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6922409794475588749}
   - component: {fileID: 9198938620031807851}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10633,7 +10633,7 @@ GameObject:
   - component: {fileID: 6172076742722235061}
   - component: {fileID: 6172076742722235068}
   - component: {fileID: 6172076742722235058}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CarEnemy 1
   m_TagString: AI
   m_Icon: {fileID: 0}
@@ -10878,7 +10878,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5530352619436366266}
   - component: {fileID: 270282606144757225}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CarEngineSFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11005,7 +11005,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3203433557776550271}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ParticleSystems
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11042,7 +11042,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3246449563363128330}
   - component: {fileID: 6944700373512408074}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CarJump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11172,7 +11172,7 @@ GameObject:
   - component: {fileID: 8158631591372712020}
   - component: {fileID: 543375831820867375}
   - component: {fileID: 635756334016857612}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ParticleSystemSmokeRightWheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
