@@ -47,6 +47,7 @@ public class LevelSystem : MonoBehaviour
 
             GainExperienceFlatRate(20);
         }
+
         if (currentXp > requiredXp)
         {
             LevelUp();

@@ -10,6 +10,7 @@ public class CarInputHandler : MonoBehaviour
     private Camera mainCamera;
 
 
+    
     public UnityEvent OnShoot = new UnityEvent();
     public UnityEvent<Vector2> OnMoveTurret = new UnityEvent<Vector2>();
 

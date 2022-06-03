@@ -10824,6 +10824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 100
   health: 95
+  deadObject: 0
   OnDead:
     m_PersistentCalls:
       m_Calls:
