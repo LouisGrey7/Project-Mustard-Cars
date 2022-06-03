@@ -21306,7 +21306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269cb77a2f5f055468764ef9e2574996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeightScale: 0.8
+  jumpHeightScale: 0.3
   jumpPushScale: 0.7
 --- !u!61 &420484306
 BoxCollider2D:
@@ -22561,7 +22561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269cb77a2f5f055468764ef9e2574996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeightScale: 0.8
+  jumpHeightScale: 0.3
   jumpPushScale: 0.7
 --- !u!61 &485929044
 BoxCollider2D:
@@ -29446,7 +29446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269cb77a2f5f055468764ef9e2574996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeightScale: 0.8
+  jumpHeightScale: 0.3
   jumpPushScale: 0.7
 --- !u!61 &871342442
 BoxCollider2D:
@@ -31210,7 +31210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269cb77a2f5f055468764ef9e2574996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeightScale: 0.8
+  jumpHeightScale: 0.3
   jumpPushScale: 0.7
 --- !u!61 &942360562
 BoxCollider2D:
@@ -36169,7 +36169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269cb77a2f5f055468764ef9e2574996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeightScale: 0.8
+  jumpHeightScale: 0.3
   jumpPushScale: 0.7
 --- !u!61 &1213368883
 BoxCollider2D:
@@ -37516,7 +37516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269cb77a2f5f055468764ef9e2574996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeightScale: 0.8
+  jumpHeightScale: 0.3
   jumpPushScale: 0.7
 --- !u!61 &1296575860
 BoxCollider2D:
@@ -40014,7 +40014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269cb77a2f5f055468764ef9e2574996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeightScale: 0.8
+  jumpHeightScale: 0.3
   jumpPushScale: 0.7
 --- !u!61 &1461082079
 BoxCollider2D:
@@ -48619,7 +48619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269cb77a2f5f055468764ef9e2574996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeightScale: 0.8
+  jumpHeightScale: 0.3
   jumpPushScale: 0.7
 --- !u!61 &1922494822
 BoxCollider2D:
@@ -48967,7 +48967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269cb77a2f5f055468764ef9e2574996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeightScale: 0.8
+  jumpHeightScale: 0.3
   jumpPushScale: 0.7
 --- !u!61 &1924933826
 BoxCollider2D:
@@ -52126,7 +52126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269cb77a2f5f055468764ef9e2574996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeightScale: 0.8
+  jumpHeightScale: 0.3
   jumpPushScale: 0.7
 --- !u!61 &2093684944
 BoxCollider2D:
@@ -53376,6 +53376,70 @@ PrefabInstance:
     - target: {fileID: 6297736545003867247, guid: fed87167b75f5064e89555d80b444716, type: 3}
       propertyPath: maxSpeed
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736545003867247, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: jumpCurve.m_Curve.Array.data[1].time
+      value: 0.52185005
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736545003867247, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: jumpCurve.m_Curve.Array.data[2].time
+      value: 0.52652436
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736545003867247, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: jumpCurve.m_Curve.Array.data[1].value
+      value: 0.993701
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736545003867247, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: jumpCurve.m_Curve.Array.data[2].value
+      value: 0.99531937
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736545003867247, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: jumpCurve.m_Curve.Array.data[0].inSlope
+      value: 0.12080944
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736545003867247, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: jumpCurve.m_Curve.Array.data[1].inSlope
+      value: -0.0028509253
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736545003867247, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: jumpCurve.m_Curve.Array.data[2].inSlope
+      value: 0.009930259
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736545003867247, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: jumpCurve.m_Curve.Array.data[3].inSlope
+      value: -2.0951142
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736545003867247, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: jumpCurve.m_Curve.Array.data[0].outSlope
+      value: 0.12080944
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736545003867247, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: jumpCurve.m_Curve.Array.data[1].outSlope
+      value: -0.0028509253
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736545003867247, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: jumpCurve.m_Curve.Array.data[2].outSlope
+      value: 0.009930259
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736545003867247, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: jumpCurve.m_Curve.Array.data[3].outSlope
+      value: -2.0951142
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736545003867247, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: jumpCurve.m_Curve.Array.data[0].outWeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736545003867247, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: jumpCurve.m_Curve.Array.data[1].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736545003867247, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: jumpCurve.m_Curve.Array.data[2].outWeight
+      value: 0.37254906
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297736545003867247, guid: fed87167b75f5064e89555d80b444716, type: 3}
+      propertyPath: jumpCurve.m_Curve.Array.data[0].tangentMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6297736545401283451, guid: fed87167b75f5064e89555d80b444716, type: 3}
       propertyPath: m_audioClip
