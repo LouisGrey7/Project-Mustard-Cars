@@ -10627,7 +10627,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5012966972808646188}
   - component: {fileID: 740405154160534335}
-  - component: {fileID: 5436794357945350091}
   - component: {fileID: 7485885268962843051}
   - component: {fileID: 3793636447454459137}
   - component: {fileID: 6172076742722235061}
@@ -10680,25 +10679,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5436794357945350091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6810905568471061290}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3a5dae2fb1542543af6be2f901a7080, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCamera: {fileID: 0}
-  OnShoot:
-    m_PersistentCalls:
-      m_Calls: []
-  OnMoveTurret:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &7485885268962843051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10847,6 +10827,18 @@ MonoBehaviour:
   OnDead:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 427837908, guid: fed87167b75f5064e89555d80b444716, type: 3}
+        m_TargetAssemblyTypeName: LevelSystem, Assembly-CSharp
+        m_MethodName: GainExperienceFlatRate
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 30
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 6810905568471061290}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
