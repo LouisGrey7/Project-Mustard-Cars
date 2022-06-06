@@ -1586,8 +1586,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swarmerPrefab: {fileID: 6810905568471061290, guid: 2aa78e414d1b96641b1249985a0a2dfa, type: 3}
   swarmer2Prefab: {fileID: 6810905568471061290, guid: 4b79b411d4e07af47ab4306d05194785, type: 3}
-  swarmerMinInterval: 1
-  swarmerMaxInterval: 5
+  swarmerMinInterval: 4
+  swarmerMaxInterval: 9
 --- !u!4 &77511398
 Transform:
   m_ObjectHideFlags: 0
@@ -30428,7 +30428,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.0187266, y: 1}
+    m_SensorSize: {x: 2.1188118, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -35362,8 +35362,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swarmerPrefab: {fileID: 6810905568471061290, guid: 2aa78e414d1b96641b1249985a0a2dfa, type: 3}
   swarmer2Prefab: {fileID: 6810905568471061290, guid: 4b79b411d4e07af47ab4306d05194785, type: 3}
-  swarmerMinInterval: 1
-  swarmerMaxInterval: 5
+  swarmerMinInterval: 4
+  swarmerMaxInterval: 9
 --- !u!4 &1148295805
 Transform:
   m_ObjectHideFlags: 0
@@ -41737,8 +41737,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swarmerPrefab: {fileID: 6810905568471061290, guid: 2aa78e414d1b96641b1249985a0a2dfa, type: 3}
   swarmer2Prefab: {fileID: 6810905568471061290, guid: 4b79b411d4e07af47ab4306d05194785, type: 3}
-  swarmerMinInterval: 1
-  swarmerMaxInterval: 5
+  swarmerMinInterval: 4
+  swarmerMaxInterval: 9
 --- !u!4 &1487021489
 Transform:
   m_ObjectHideFlags: 0
@@ -45028,8 +45028,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swarmerPrefab: {fileID: 6810905568471061290, guid: 2aa78e414d1b96641b1249985a0a2dfa, type: 3}
   swarmer2Prefab: {fileID: 6810905568471061290, guid: 4b79b411d4e07af47ab4306d05194785, type: 3}
-  swarmerMinInterval: 1
-  swarmerMaxInterval: 5
+  swarmerMinInterval: 4
+  swarmerMaxInterval: 9
 --- !u!4 &1652923083
 Transform:
   m_ObjectHideFlags: 0

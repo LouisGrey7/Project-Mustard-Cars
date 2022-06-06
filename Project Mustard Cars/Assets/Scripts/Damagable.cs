@@ -44,7 +44,7 @@ public class Damagable : MonoBehaviour
             
             OnDead?.Invoke();
             Destroy(gameObject);
-            playerLevel.GainExperienceFlatRate(20);
+            playerLevel.GainExperienceFlatRate(10);
             deadObject = true;
         }
         else
