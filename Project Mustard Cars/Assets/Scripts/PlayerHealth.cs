@@ -84,5 +84,13 @@ public class PlayerHealth : MonoBehaviour
         health = maxHealth;
     }
 
-   
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("AI"))
+        {
+            health = health - 10;
+            Destroy(collision.gameObject);
+        }
+    }
+
 }
