@@ -59,4 +59,12 @@ public class Bullet : MonoBehaviour
         
     }
 
+    public void IncreaseBulletSpeed()
+    {
+        speed += 2;
+    }
+    public void IncreaseBulletDamage()
+    {
+        damage += 2;
+    }
 }

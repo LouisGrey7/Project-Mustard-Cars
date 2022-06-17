@@ -295,4 +295,8 @@ public class TopDownCarController : MonoBehaviour
         }
     }
 
+    public void IncreaseMaxSpeed()
+    {
+        maxSpeed += 10;
+    }
 }

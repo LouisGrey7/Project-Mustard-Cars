@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
+
 public class LevelSystem : MonoBehaviour
 {
     public int level;
@@ -24,7 +27,10 @@ public class LevelSystem : MonoBehaviour
     [Range(7f, 14f)]
     public float divisionMulitplier = 7;
 
+    public UnityEvent LevelUpMenu;
+    public static bool GameIsPaused = false;
 
+    public GameObject LevelUpUI;
 
 
 
@@ -106,6 +112,8 @@ public class LevelSystem : MonoBehaviour
         GetComponent<PlayerHealth>().IncreaseHealth(level);
         requiredXp = CalculateRequiredXp();
         levelText.text = "Level " + level;
+        LevelUpMenu?.Invoke();
+        Pause();
     }
 
     private int CalculateRequiredXp()
@@ -117,5 +125,21 @@ public class LevelSystem : MonoBehaviour
 
         }
         return solveForRequiredXp / 4;
+    }
+
+    public void Resume()
+    {
+
+        LevelUpUI.SetActive(false);
+        Time.timeScale = 1f;
+        GameIsPaused = false;
+
+    }
+
+    public void Pause()
+    {
+        LevelUpUI.SetActive(true);
+        Time.timeScale = 0f;
+        GameIsPaused = true;
     }
 }
