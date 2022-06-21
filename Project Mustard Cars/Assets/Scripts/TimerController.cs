@@ -16,9 +16,9 @@ public class TimerController : MonoBehaviour
     private bool timerGoing;
 
     private float elapsedTime;
+    public float timeRemaining = 10;
 
-
-
+    public WinScreen winningScreen;
     private void Awake()
     {
         instance = this;
@@ -57,12 +57,21 @@ public class TimerController : MonoBehaviour
             yield return null;
 
         }
-
+   
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (timeRemaining > 0)
+        {
+            timeRemaining -= Time.deltaTime;
+        }
+        else
+        {
+            winningScreen.Setup();
+            Time.timeScale = 0f;
+        }
     }
+
+
 }

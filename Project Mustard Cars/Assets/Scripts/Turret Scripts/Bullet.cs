@@ -14,10 +14,12 @@ public class Bullet : MonoBehaviour
     private Rigidbody2D rb2d;
 
     CarSfxHandler carSfxHandler;
+    public AudioSource source;
 
     private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        source = GetComponent<AudioSource>();
     }
 
     public void Initialize()
@@ -56,7 +58,7 @@ public class Bullet : MonoBehaviour
         }
 
         DisableObject();
-        
+        source.Play();
     }
 
     public void IncreaseBulletSpeed()

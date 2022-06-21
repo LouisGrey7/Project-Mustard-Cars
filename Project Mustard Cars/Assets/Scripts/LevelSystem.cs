@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelSystem : MonoBehaviour
 {
+
     public int level;
     public float currentXp;
     public float requiredXp;
@@ -31,7 +32,7 @@ public class LevelSystem : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject LevelUpUI;
-
+    public WinScreen winScreen;
 
 
     // Start is called before the first frame update
