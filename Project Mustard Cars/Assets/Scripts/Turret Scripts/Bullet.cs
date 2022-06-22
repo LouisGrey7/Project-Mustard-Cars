@@ -25,7 +25,6 @@ public class Bullet : MonoBehaviour
     {
         startPosition = transform.position;
         rb2d.velocity = transform.up * speed;
-        bulletSound.Play();
     }
 
     private void Update()
@@ -58,6 +57,7 @@ public class Bullet : MonoBehaviour
         }
 
         DisableObject();
+        bulletSound.Play();
        
     }
 
