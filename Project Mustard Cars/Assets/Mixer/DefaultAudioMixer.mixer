@@ -172,6 +172,25 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!243 &-2872340508564237410
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BulletHit
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: d78ba722a2821db41b062cd50554b5ba
+  m_Children: []
+  m_Volume: 5931f95f124047140a756848ac21cf61
+  m_Pitch: 81f5786fd9eb0ab4db5fe94b725be4e6
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -1202910754069076239}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!244 &-1990066950038809039
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -182,6 +201,20 @@ AudioMixerEffectController:
   m_EffectID: 6c99dc80c7068514f88b5e95a9e54c37
   m_EffectName: Attenuation
   m_MixLevel: 5944f9697543e784497f5df1bf33e5a1
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &-1202910754069076239
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 743066b2f3e48be43893125b5e9942ca
+  m_EffectName: Attenuation
+  m_MixLevel: f6220ea9dcb88ce4dbd23b159f41cded
   m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
@@ -268,6 +301,8 @@ AudioMixerController:
     - 98f78b3fb37ca3f4c92eae5685c466f7
     - 4af5e420e0d71af4abe1b08c66051eb7
     - 9537d8a971c8cb5478c7fb1ec974a194
+    - 4c2e6bf27dac82a45b4a2347bf578239
+    - d78ba722a2821db41b062cd50554b5ba
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -317,6 +352,7 @@ AudioMixerSnapshotController:
   m_SnapshotID: aa8c206027699b849b17b7c541d17d7d
   m_FloatValues:
     51fbc2a06002ecc46bc257f19afcd271: -5.3230753
+    1e03f581a0ec0b549a795b883ddb3ccf: -10.345207
     0aad8ab17d7142547b9903da75611a4f: -0.39762527
     4e8419f2ff9523342a37dfaaa5b9ac69: -0.39762527
     8b9bec75c46216541b7caad0ede1bd92: 0
@@ -327,6 +363,7 @@ AudioMixerSnapshotController:
     9456984bef4c70b4797ac0c138b7f998: -9.4
     6ab46f4b0356d4f49b3d8a4ba75c7843: -19.928473
     854500cc7885e3048b4b6133a582f430: 0.04171297
+    5931f95f124047140a756848ac21cf61: 1.1400865
     8b8c84bfaa7c5ec429f5993fdc53a156: 0.27000841
     ac2469cf8d6a49f4bba78598a094f5ac: 0.65
   m_TransitionOverrides: {}
@@ -429,6 +466,39 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!243 &3240555387155641064
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GunShot
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 4c2e6bf27dac82a45b4a2347bf578239
+  m_Children: []
+  m_Volume: 1e03f581a0ec0b549a795b883ddb3ccf
+  m_Pitch: feb2000418bb8cd4ead4d9686ce604f7
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 3559767322426957714}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &3559767322426957714
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: ac44e27c74341204f9d0d0c193cc90c0
+  m_EffectName: Attenuation
+  m_MixLevel: 7ba082f5114e4f343afb6e250eb67567
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!243 &5129275879842625140
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -444,6 +514,7 @@ AudioMixerGroupController:
   - {fileID: 6335318804238143396}
   - {fileID: 7919649977128831659}
   - {fileID: -2912145591800540424}
+  - {fileID: -2872340508564237410}
   m_Volume: 6ab46f4b0356d4f49b3d8a4ba75c7843
   m_Pitch: 67e4ad93c46f2844aad8f2f4b4dbb2ff
   m_Send: 00000000000000000000000000000000
@@ -562,6 +633,7 @@ AudioMixerGroupController:
   - {fileID: 1459179524719096735}
   - {fileID: -264675115877564133}
   - {fileID: 772508780091306223}
+  - {fileID: 3240555387155641064}
   m_Volume: 854500cc7885e3048b4b6133a582f430
   m_Pitch: 3956ffd97e2b3ef40b71114408dbcd91
   m_Send: 00000000000000000000000000000000

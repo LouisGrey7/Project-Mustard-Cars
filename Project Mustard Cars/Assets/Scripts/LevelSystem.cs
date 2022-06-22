@@ -69,7 +69,7 @@ public class LevelSystem : MonoBehaviour
         {
             delayTimer += Time.deltaTime;
             backXpBar.fillAmount = xpFraction;
-            if (delayTimer > 3)
+            if (delayTimer > 1)
             {
                 lerpTimer += Time.deltaTime;
                 float percentComplete = lerpTimer / 4;

@@ -19,6 +19,7 @@ public class Bullet : MonoBehaviour
     private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        
     }
 
     public void Initialize()
@@ -32,16 +33,17 @@ public class Bullet : MonoBehaviour
         conqueredDistance = Vector2.Distance(transform.position, startPosition);
         if(conqueredDistance >= maxDistance)
         {
+           
             DisableObject();
         }
     }
 
     private void DisableObject()
     {
+        
         rb2d.velocity = Vector2.zero;
         gameObject.SetActive(false);
         Destroy(gameObject);
-
 
     }
 
@@ -55,9 +57,9 @@ public class Bullet : MonoBehaviour
             damagable.Hit(damage);
             
         }
-
+        
         DisableObject();
-        bulletSound.Play();
+        
        
     }
 

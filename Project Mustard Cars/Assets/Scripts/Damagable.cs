@@ -11,6 +11,7 @@ public class Damagable : MonoBehaviour
     [SerializeField]
     private int health;
     public bool deadObject = false;
+    public AudioSource bulletHitSFX;
 
     public int Health
     {
@@ -27,7 +28,11 @@ public class Damagable : MonoBehaviour
     public UnityEvent<float> OnHealthChange;
     public UnityEvent OnHit, OnHeal;
 
-    
+
+    private void Awake()
+    {
+        bulletHitSFX = GetComponent<AudioSource>();
+    }
     // Start is called before the first frame update
     private void Start()
     {
@@ -38,13 +43,14 @@ public class Damagable : MonoBehaviour
 
     internal void Hit(int damagePoints)
     {
+        bulletHitSFX.Play();
         Health -= damagePoints;
         if (health <= 0)
         {
             
             OnDead?.Invoke();
             Destroy(gameObject);
-            playerLevel.GainExperienceFlatRate(10);
+            playerLevel.GainExperienceScalable(2, playerLevel.level);
             deadObject = true;
         }
         else
