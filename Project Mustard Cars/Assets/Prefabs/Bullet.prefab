@@ -150,7 +150,6 @@ MonoBehaviour:
   speed: 20
   damage: 30
   maxDistance: 30
-  source: {fileID: 0}
 --- !u!82 &7787158118297017616
 AudioSource:
   m_ObjectHideFlags: 0
@@ -161,15 +160,15 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 63e7440aec62deb469096edea43a4774, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9b84b07b743303e41b32fd42242a3161, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.304
-  m_Pitch: 1
+  m_Volume: 0.219
+  m_Pitch: 0.9
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 189
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
