@@ -5579,7 +5579,7 @@ SpriteRenderer:
   m_SortingLayerID: -653448857
   m_SortingLayer: -2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 432d967de7608674e921b5c64e0f63c2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 14acfb359f9fb3943841774ece5de10b, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.5254902}
   m_FlipX: 0
   m_FlipY: 0
@@ -10475,7 +10475,7 @@ SpriteRenderer:
   m_SortingLayerID: -1399236495
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 432d967de7608674e921b5c64e0f63c2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 14acfb359f9fb3943841774ece5de10b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10633,7 +10633,7 @@ GameObject:
   - component: {fileID: 6172076742722235068}
   - component: {fileID: 6172076742722235058}
   m_Layer: 0
-  m_Name: CarEnemy 2
+  m_Name: CarEnemy 5
   m_TagString: AI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10789,9 +10789,9 @@ PolygonCollider2D:
       - {x: 0.33511734, y: 0.29844284}
       - {x: 0.26586533, y: 0.40748978}
       - {x: 0.3941269, y: 0.4440918}
-      - {x: 0.12947845, y: 0.7841568}
-      - {x: 0.017448425, y: 0.86032104}
-      - {x: -0.21224213, y: 0.9606514}
+      - {x: 0.25170135, y: 0.8365402}
+      - {x: 0, y: 1}
+      - {x: -0.2558899, y: 0.87335587}
       - {x: -0.34547335, y: 0.45151114}
       - {x: -0.33182144, y: 0.1715889}
       - {x: -0.27608627, y: -0.87135684}

@@ -919,8 +919,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swarmerPrefab: {fileID: 6810905568471061290, guid: 2aa78e414d1b96641b1249985a0a2dfa, type: 3}
   swarmer2Prefab: {fileID: 6810905568471061290, guid: 4b79b411d4e07af47ab4306d05194785, type: 3}
-  swarmerMinInterval: 4
-  swarmerMaxInterval: 9
+  swarmer3Prefab: {fileID: 6810905568471061290, guid: 004f8f000b7f72a4e9375cef164465d9, type: 3}
+  swarmer4Prefab: {fileID: 6810905568471061290, guid: f083f846df1fa1c498a19154a05b2e2d, type: 3}
+  swarmer5Prefab: {fileID: 6810905568471061290, guid: 3608cb729225d6b4db28d10702a02bd0, type: 3}
+  swarmer6Prefab: {fileID: 6810905568471061290, guid: 0eff472df6b03f046a27cab869ee8186, type: 3}
+  swarmer7Prefab: {fileID: 6810905568471061290, guid: b45c7ad6d80041248aa47dd12bcc7e7a, type: 3}
+  swarmer8Prefab: {fileID: 6810905568471061290, guid: e17a6aee623cdba49a752c8a8b8d11e5, type: 3}
+  swarmerMinInterval: 5
+  swarmerMaxInterval: 20
 --- !u!4 &77511398
 Transform:
   m_ObjectHideFlags: 0
@@ -18755,7 +18761,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 427837908, guid: fed87167b75f5064e89555d80b444716, type: 3}
   m_PrefabInstance: {fileID: 6297736543769142732}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 442273181}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b01dbe25be64cf4791e1d5a0adc2087, type: 3}
@@ -18766,7 +18772,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6297736545003867247, guid: fed87167b75f5064e89555d80b444716, type: 3}
   m_PrefabInstance: {fileID: 6297736543769142732}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 442273181}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac8d4125b9f803c459726d38fbddb692, type: 3}
@@ -18994,6 +19000,71 @@ Transform:
   m_Father: {fileID: 1353118471}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &442273181 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6297736545003867217, guid: fed87167b75f5064e89555d80b444716, type: 3}
+  m_PrefabInstance: {fileID: 6297736543769142732}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &442273189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442273181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd438dd108a0f284aa931a2da434f1d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ImpulseDefinition:
+    m_ImpulseChannel: 1
+    m_ImpulseShape: 2
+    m_CustomImpulseShape:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ImpulseDuration: 0.2
+    m_ImpulseType: 0
+    m_DissipationRate: 0.25
+    m_RawSignal: {fileID: 0}
+    m_AmplitudeGain: 1
+    m_FrequencyGain: 1
+    m_RepeatMode: 0
+    m_Randomize: 1
+    m_TimeEnvelope:
+      m_AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_AttackTime: 0
+      m_SustainTime: 0.2
+      m_DecayTime: 0.7
+      m_ScaleWithImpact: 1
+      m_HoldForever: 0
+    m_ImpactRadius: 100
+    m_DirectionMode: 0
+    m_DissipationMode: 2
+    m_DissipationDistance: 100
+    m_PropagationSpeed: 343
+  m_DefaultVelocity: {x: 0, y: -1, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_IgnoreTag: 
+  m_UseImpactDirection: 0
+  m_ScaleImpactWithMass: 0
+  m_ScaleImpactWithSpeed: 0
 --- !u!1 &455879691
 GameObject:
   m_ObjectHideFlags: 0
@@ -22823,8 +22894,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swarmerPrefab: {fileID: 6810905568471061290, guid: 2aa78e414d1b96641b1249985a0a2dfa, type: 3}
   swarmer2Prefab: {fileID: 6810905568471061290, guid: 4b79b411d4e07af47ab4306d05194785, type: 3}
-  swarmerMinInterval: 4
-  swarmerMaxInterval: 9
+  swarmer3Prefab: {fileID: 6810905568471061290, guid: 004f8f000b7f72a4e9375cef164465d9, type: 3}
+  swarmer4Prefab: {fileID: 6810905568471061290, guid: f083f846df1fa1c498a19154a05b2e2d, type: 3}
+  swarmer5Prefab: {fileID: 6810905568471061290, guid: 3608cb729225d6b4db28d10702a02bd0, type: 3}
+  swarmer6Prefab: {fileID: 6810905568471061290, guid: 0eff472df6b03f046a27cab869ee8186, type: 3}
+  swarmer7Prefab: {fileID: 6810905568471061290, guid: b45c7ad6d80041248aa47dd12bcc7e7a, type: 3}
+  swarmer8Prefab: {fileID: 6810905568471061290, guid: e17a6aee623cdba49a752c8a8b8d11e5, type: 3}
+  swarmerMinInterval: 5
+  swarmerMaxInterval: 20
 --- !u!4 &1148295805
 Transform:
   m_ObjectHideFlags: 0
@@ -23482,6 +23559,7 @@ GameObject:
   - component: {fileID: 1239083301}
   - component: {fileID: 1239083300}
   - component: {fileID: 1239083299}
+  - component: {fileID: 1239083303}
   m_Layer: 5
   m_Name: LevelUpMenu
   m_TagString: Untagged
@@ -23571,6 +23649,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!95 &1239083303
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239083298}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: df81de18da7f9a849a9491344aaf4f59, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1259579838
 GameObject:
   m_ObjectHideFlags: 0
@@ -25127,8 +25225,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swarmerPrefab: {fileID: 6810905568471061290, guid: 2aa78e414d1b96641b1249985a0a2dfa, type: 3}
   swarmer2Prefab: {fileID: 6810905568471061290, guid: 4b79b411d4e07af47ab4306d05194785, type: 3}
-  swarmerMinInterval: 4
-  swarmerMaxInterval: 9
+  swarmer3Prefab: {fileID: 6810905568471061290, guid: 004f8f000b7f72a4e9375cef164465d9, type: 3}
+  swarmer4Prefab: {fileID: 6810905568471061290, guid: f083f846df1fa1c498a19154a05b2e2d, type: 3}
+  swarmer5Prefab: {fileID: 6810905568471061290, guid: 3608cb729225d6b4db28d10702a02bd0, type: 3}
+  swarmer6Prefab: {fileID: 6810905568471061290, guid: 0eff472df6b03f046a27cab869ee8186, type: 3}
+  swarmer7Prefab: {fileID: 6810905568471061290, guid: b45c7ad6d80041248aa47dd12bcc7e7a, type: 3}
+  swarmer8Prefab: {fileID: 6810905568471061290, guid: e17a6aee623cdba49a752c8a8b8d11e5, type: 3}
+  swarmerMinInterval: 5
+  swarmerMaxInterval: 20
 --- !u!4 &1487021489
 Transform:
   m_ObjectHideFlags: 0
@@ -25982,8 +26086,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swarmerPrefab: {fileID: 6810905568471061290, guid: 2aa78e414d1b96641b1249985a0a2dfa, type: 3}
   swarmer2Prefab: {fileID: 6810905568471061290, guid: 4b79b411d4e07af47ab4306d05194785, type: 3}
-  swarmerMinInterval: 4
-  swarmerMaxInterval: 9
+  swarmer3Prefab: {fileID: 6810905568471061290, guid: 004f8f000b7f72a4e9375cef164465d9, type: 3}
+  swarmer4Prefab: {fileID: 6810905568471061290, guid: f083f846df1fa1c498a19154a05b2e2d, type: 3}
+  swarmer5Prefab: {fileID: 6810905568471061290, guid: 3608cb729225d6b4db28d10702a02bd0, type: 3}
+  swarmer6Prefab: {fileID: 6810905568471061290, guid: 0eff472df6b03f046a27cab869ee8186, type: 3}
+  swarmer7Prefab: {fileID: 6810905568471061290, guid: b45c7ad6d80041248aa47dd12bcc7e7a, type: 3}
+  swarmer8Prefab: {fileID: 6810905568471061290, guid: e17a6aee623cdba49a752c8a8b8d11e5, type: 3}
+  swarmerMinInterval: 5
+  swarmerMaxInterval: 20
 --- !u!4 &1652923083
 Transform:
   m_ObjectHideFlags: 0
@@ -26141,7 +26251,7 @@ Transform:
   m_Children:
   - {fileID: 260897977}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &1747195968
 Grid:
@@ -28968,7 +29078,7 @@ PrefabInstance:
       objectReference: {fileID: 113506646}
     - target: {fileID: 6297736545003867245, guid: fed87167b75f5064e89555d80b444716, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6297736545003867245, guid: fed87167b75f5064e89555d80b444716, type: 3}
       propertyPath: m_LocalPosition.x
