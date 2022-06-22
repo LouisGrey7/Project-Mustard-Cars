@@ -14,7 +14,7 @@ public class Bullet : MonoBehaviour
     private Rigidbody2D rb2d;
 
     CarSfxHandler carSfxHandler;
-  
+    public AudioSource bulletSound;
 
     private void Awake()
     {
@@ -25,6 +25,7 @@ public class Bullet : MonoBehaviour
     {
         startPosition = transform.position;
         rb2d.velocity = transform.up * speed;
+        bulletSound.Play();
     }
 
     private void Update()
