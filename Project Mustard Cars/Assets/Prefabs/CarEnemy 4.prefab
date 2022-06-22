@@ -10827,6 +10827,7 @@ MonoBehaviour:
   health: 95
   deadObject: 0
   bulletHitSFX: {fileID: 0}
+  deathEffect: {fileID: 1189840806259977359, guid: ac47b9552751ac2459ece36ba11b2b71, type: 3}
   OnDead:
     m_PersistentCalls:
       m_Calls:

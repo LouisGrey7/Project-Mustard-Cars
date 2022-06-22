@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 29b6059efba683143ac9dbdbf42220ab
+guid: fabd516a4d5262b4eae0ea2fcdc9fa24
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -69,7 +69,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vfx_explosionV3-Sheet_0
+      name: vfx_explosionV2-Sheet_0
       rect:
         serializedVersion: 2
         x: 64
@@ -112,20 +112,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27a77b271504ebd4ba41060bbbb32b8a
-      internalID: -1044276257
+      spriteID: 01b07a6f568d12b4fa334ae3b35858c5
+      internalID: 492766141
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vfx_explosionV3-Sheet_1
+      name: vfx_explosionV2-Sheet_1
       rect:
         serializedVersion: 2
         x: 128
@@ -133,20 +133,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97eeeb153b1b029439e3e0bf8bb56747
-      internalID: 117816593
+      spriteID: 7634e8851c13363439a541298dff9528
+      internalID: -2014684043
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vfx_explosionV3-Sheet_2
+      name: vfx_explosionV2-Sheet_2
       rect:
         serializedVersion: 2
         x: 192
@@ -154,20 +154,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b53c69ab9ad974f4d90ff6192490c198
-      internalID: 1886783109
+      spriteID: 60b166f7f1b883948a4f2077722e7cf3
+      internalID: 1600151574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vfx_explosionV3-Sheet_3
+      name: vfx_explosionV2-Sheet_3
       rect:
         serializedVersion: 2
         x: 256
@@ -175,20 +175,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92430089ddd705c46a59792ab120cd0f
-      internalID: 1468626861
+      spriteID: 97d9e3fceb2907b47af1f82e8d6679e5
+      internalID: -1906785088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vfx_explosionV3-Sheet_4
+      name: vfx_explosionV2-Sheet_4
       rect:
         serializedVersion: 2
         x: 320
@@ -196,20 +196,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22917d4362331ef458b149a66fc99aad
-      internalID: 856503843
+      spriteID: d564343689f844c4084effe7bb61f1f4
+      internalID: 811391346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vfx_explosionV3-Sheet_5
+      name: vfx_explosionV2-Sheet_5
       rect:
         serializedVersion: 2
         x: 384
@@ -217,20 +217,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1256f116b9b7d6746801eb05ccbd680b
-      internalID: 359202196
+      spriteID: b2e9bb0463cd03741905d40b6ea0dcac
+      internalID: -577601758
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vfx_explosionV3-Sheet_6
+      name: vfx_explosionV2-Sheet_6
       rect:
         serializedVersion: 2
         x: 448
@@ -238,41 +238,41 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68200b56c3c25e7428631f78c1120438
-      internalID: 1806535988
+      spriteID: 4794c22ef398a0747aed61e55f689a32
+      internalID: -380937683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vfx_explosionV3-Sheet_7
+      name: vfx_explosionV2-Sheet_7
       rect:
         serializedVersion: 2
-        x: 512
+        x: 510
         y: 0
-        width: 64
+        width: 66
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 070ef80330a5f3f47b8044c4ebedc5e2
-      internalID: 601114398
+      spriteID: 5fb73f3fb98584143b345cd6d8b526fa
+      internalID: -1907382640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vfx_explosionV3-Sheet_8
+      name: vfx_explosionV2-Sheet_8
       rect:
         serializedVersion: 2
         x: 576
@@ -280,20 +280,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd44786444cb3c040850712a75c58a92
-      internalID: 1883277124
+      spriteID: e9bc640727575ed4d875e79dcb131807
+      internalID: 404515945
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vfx_explosionV3-Sheet_9
+      name: vfx_explosionV2-Sheet_9
       rect:
         serializedVersion: 2
         x: 640
@@ -301,14 +301,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dac7ce7cbe2a2df429d95d54464ea938
-      internalID: -1802530580
+      spriteID: c790245eb45d21d4696aeec2284766c3
+      internalID: 1226319851
       vertices: []
       indices: 
       edges: []
@@ -324,16 +324,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      vfx_explosionV3-Sheet_6: 1806535988
-      vfx_explosionV3-Sheet_0: -1044276257
-      vfx_explosionV3-Sheet_5: 359202196
-      vfx_explosionV3-Sheet_1: 117816593
-      vfx_explosionV3-Sheet_8: 1883277124
-      vfx_explosionV3-Sheet_2: 1886783109
-      vfx_explosionV3-Sheet_9: -1802530580
-      vfx_explosionV3-Sheet_3: 1468626861
-      vfx_explosionV3-Sheet_4: 856503843
-      vfx_explosionV3-Sheet_7: 601114398
+      vfx_explosionV2-Sheet_9: 1226319851
+      vfx_explosionV2-Sheet_3: -1906785088
+      vfx_explosionV2-Sheet_2: 1600151574
+      vfx_explosionV2-Sheet_8: 404515945
+      vfx_explosionV2-Sheet_1: -2014684043
+      vfx_explosionV2-Sheet_4: 811391346
+      vfx_explosionV2-Sheet_5: -577601758
+      vfx_explosionV2-Sheet_6: -380937683
+      vfx_explosionV2-Sheet_0: 492766141
+      vfx_explosionV2-Sheet_7: -1907382640
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
