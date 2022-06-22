@@ -38,10 +38,6 @@ public class CarInputHandler : MonoBehaviour
         //Send the input to the car controller
         topDownCarController.SetInputVector(inputVector);
 
-        if (Input.GetButtonDown("Jump"))
-        {
-            topDownCarController.Jump(1.0f, 0.0f);
-        }
 
     }
 
