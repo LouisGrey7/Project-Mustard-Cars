@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Jump
   - AI
+  - Level Up Menu
   layers:
   - Default
   - TransparentFX

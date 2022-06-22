@@ -15,6 +15,8 @@ public class PlayerHealth : MonoBehaviour
     public Image backHealthBar;
     public TextMeshProUGUI healthText;
 
+    public WinScreen gameOverScreen;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,11 +37,11 @@ public class PlayerHealth : MonoBehaviour
         {
             RestoreHealth(Random.Range(5, 10));
         }
+        Dead();
     }
 
     public void UpdateHealthUI()
     {
-        Debug.Log(health);
         float fillF = frontHealthBar.fillAmount;
         float fillB = backHealthBar.fillAmount;
         float hFraction = health / maxHealth;
@@ -93,4 +95,14 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public void Dead()
+    {
+        if (health <= 0)
+        {
+            gameOverScreen.Setup();
+            Time.timeScale = 0.0f;
+        }
+
+
+    }
 }
